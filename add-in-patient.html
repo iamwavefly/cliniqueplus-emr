@@ -1,0 +1,288 @@
+<div class="breadcrumb night-color">
+    <ul>
+        <li><a href="/">/</a></li>
+        <li><a href="/in_patient">in_patient</a></li>
+        <li><a href="/in_patient/new">/new</a></li>
+    </ul>
+</div>
+<form action="/" method="POST" autocomplete="off" class="patient__form-container night-color">
+    <div class="form__header">
+        <h2 id="header_title">Admission Details</h2>
+        <p>Fill the patient information in the fields provided below</p>
+    </div>
+    
+    <div class="form_slider_controller">
+        <!-- <div class="msg_status success">
+            <span>Please fill all required * filled</span>
+        </div> -->
+        <div class="form_slider" id="form_slider">
+            <!-- --------------------------------- -->
+            <!--------------- FORM 1 ---------------->
+            <!-- --------------------------------- -->
+            <div class="patient__form form-1" id="form-1">
+                <div class="form__status">
+                    <div class="status">
+                        <div class="step-1 active out_patient"></div>
+                        <div class="step-2"></div>
+                        <div class="step-2"></div>
+                    </div>
+                </div>
+                <div class="form_container">
+                    <div class="form_group three">
+                        <div class="form_wrap">
+                            <input type="date" id="appnt_date" name="appnt_date" class="required" placeholder="Enter patient appointment date">
+                            <!-- <img src="../public/assets/icons/user_icon.svg"> -->
+                            <label for="appnt_date">Admission Date<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <select name="casualty" id="casualty">
+                                <option value="" selected disabled>Select yes or no</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="weight">Casualty?<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <select name="old_patient" id="old_patient">
+                                <option value="" selected disabled>select yes or no</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="weight">Old Patient?<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="form_group two">
+                        <div class="form_wrap">
+                            <select id="bed_group" name="bed_group" class="required">
+                                <option value="" selected disabled>Select Bed Group</option>
+                                <option value="female floor">Female Floor</option>
+                                <option value="male floor">Male Floor</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="bed_group">Bed Group</label>
+                        </div>
+                        <div class="form_wrap">
+                            <select id="bed_number" name="bed_number" class="required">
+                                <option value="" selected disabled>Select Bed Number</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="bed_number">Bed Number</label>
+                        </div>
+                    </div>
+                    <div class="form_group two">
+                        <div class="form_wrap">
+                            <input type="text" id="tpa" name="tpa" class="required" placeholder="Enter patient pta">
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="tpa">TPA <span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="charges" name="credit_limit" placeholder="Applied Charges">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="charges">Credit Limit (₦)<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="form_group two">
+                        <div class="form_wrap">
+                            <select name="consult_doc" id="consult_doc">
+                                <option value="" selected disabled>Select Consultant Doctor</option>
+                                <option>Doc. Real</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="consult_doc">Consultant Doctor<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <select>
+                                <option value="" selected disabled>Select yes or no</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="payment_mode">Live Consultation?<span>*</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------- -->
+            <!--------------- FORM 2 ---------------->
+            <!-- --------------------------------- -->
+            <div class="patient__form form-2" id="form-2">
+                <div class="form__status">
+                    <div class="status">
+                        <div class="step-1 active out_patient"></div>
+                        <div class="step-2 active out_patient"></div>
+                        <div class="step-3"></div>
+                    </div>
+                </div>
+                <div class="form_container">
+                    <div class="form_group three">
+                        <div class="form_wrap">
+                            <input type="text" id="height" name="height" class="required" placeholder="Enter patient height">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="height">Height<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="weight" name="weight" class="required" placeholder="Enter patient weight">
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="weight">Weight<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="blood_pressure" name="blood_pressure" class="required" placeholder="Enter patient blood pressure">
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="blood_pressure">BP<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="form_group three">
+                        <div class="form_wrap">
+                            <input type="text" id="pulse" name="pulse" class="required" placeholder="Enter patient pulse rate">
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="pulse">Pulse <span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="temperature" name="temperature" class="required" placeholder="Enter patient temperature">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="temperature">Temperature<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="respiration" name="respiration" class="required" placeholder="Enter patient respiration">
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="respiration">Respiration<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="form_group two">
+                        <div class="form_wrap">
+                            <select name="symtoms_type" id="symtoms_type">
+                                <option value="" selected disabled>Select Symtoms Type</option>
+                                <option>cough</option>
+                            </select>
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="lastname">Symtoms Type<span>*</span></label>
+                        </div>
+                        <div class="form_wrap">
+                            <select name="symtoms_title" id="symtoms_title">
+                                <option value="" selected disabled>Select symtoms type first</option>
+                            </select>
+
+
+                            <img src="../public/assets/icons/user_icon.svg">
+        
+                            <label for="symtoms_title">Symtoms Title<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="form_group single_input">
+                        <textarea name="symptoms_desc" id="symptoms_desc" placeholder="Enter symptoms description"></textarea>
+                    </div>
+                    <div class="form_group single_input">
+                        <textarea name="symptoms_desc" id="symptoms_desc" placeholder="Enter symptoms description"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------- -->
+            <!--------------- FORM 3 ---------------->
+            <!-- --------------------------------- -->
+            <div class="patient__form form-3" id="form-3">
+                <div class="form__status">
+                    <div class="status">
+                        <div class="step-1 active out_patient"></div>
+                        <div class="step-2 active out_patient"></div>
+                        <div class="step-3 active out_patient"></div>
+                    </div>
+                </div>
+                <div class="form_container">
+                    <div class="form_group">
+                        <div class="form_wrap">
+                            <input type="text" id="complaints" id="complaints" placeholder="Enter presenting complaints">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="complaints">Patient Present Complaints</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="history_complaints" id="history_complaints" placeholder="Enter history of presenting complaints">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="history_complaints">Patient Present Complaints</label>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="form_wrap">
+                            <input type="text" id="medical_history" id="medical_history" placeholder="Enter past medical history">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="medical_history">Patient Past Medical History</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="family_history" id="family_history" placeholder="Enter family or social history">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="family_history">Patient Family or Social History</label>
+                        </div>
+                    </div>
+                    <h3>Examination Findings:</h3>
+                    <div class="form_group five">
+                        <div class="form_wrap">
+                            <input type="text" id="general" id="general" placeholder="General finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="general">Patient General Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="cns" id="cns" placeholder="CNS finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="medical_history">Patient CNS</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="head_neck" id="head_neck" placeholder="Head & neck finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="head_neck">Head & Neck Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="chest" id="chest" placeholder="Chest finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="chest">Patient Chest Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="abdomen" id="abdomen" placeholder="Abdomen finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="abdomen">Patient Abdomen Finding</label>
+                        </div>
+                    </div>
+                    <div class="form_group five">
+                        <div class="form_wrap">
+                            <input type="text" id="mss" id="mss" placeholder="MSS finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="mss">Patient MSS Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="urogenital" id="urogenital" placeholder="Urogenital finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="urogenital">Patient Urogenital Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="pr" id="pr" placeholder="PR finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="pr">PR Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="ve" id="ve" placeholder="VE finding">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="ve">VE Finding</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="text" id="visual_acuity" id="visual_acuity" placeholder="Visual acuity & fundoscopy">
+                            <img src="../public/assets/icons/user_icon.svg">
+                            <label for="visual_acuity">VA & Fundoscopy</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="btn_group" id="btn_container">
+        <button class="prev_btn" id="prev_btn"><img src="../public/assets/icons/bck_arrow.svg" alt="bck arrow">Back</button>
+        <button class="nxt_btn" id="nxt_btn">Continue<img src="../public/assets/icons/nxt_arrow.svg" alt="nxt arrow"/></button>
+    </div>
+    <a href="/patient" class="cnl_btn">Cancel Registration</a>
+</form>

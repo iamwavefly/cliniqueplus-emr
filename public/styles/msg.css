@@ -1,0 +1,17 @@
+.msg_status{
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    top: 10px;
+}
+.msg_status.success{
+    background-color: var(--green-color);
+    color: #94a598;
+}
+.msg_status.danger{
+    background-color: var(--red-color);
+    color: #721c24;
+}
